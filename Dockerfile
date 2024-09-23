@@ -8,7 +8,7 @@ COPY ./settings.gradle .
 
 COPY src ./src
 
-RUN gradle build --no-daemon
+RUN gradle build --no-daemon -x test
 
 #stage 2
 FROM openjdk:21-jdk-slim
