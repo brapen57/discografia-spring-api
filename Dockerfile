@@ -11,7 +11,7 @@ COPY src ./src
 RUN gradle build --no-daemon
 
 #stage 2
-FROM openjdk21:21-jdk-slim
+FROM openjdk:21-jdk-slim
 
 WORKDIR /app
 
